@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>New user Form</title>
+  <link rel="stylesheet" href="css/form.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<header>
+  <nav>
+    <ul>
+      <li><a href="#">NOBLE</a></li>
+      <li><a href="#" class="logo">
+        <img src="images/logo3.png">
+      </a></li>
+      <li><a href="#">BANK</a></li>
+    </ul>
+  </nav>
+</header>
+<div class="container">  
+  <form id="contact" action="/add" method="post">
+    <h3>Open New Account</h3>
+    <h4>Our bank welcomes you 😊</h4>
+    <fieldset>
+      <input placeholder="Your name"  name="name" type="text" tabindex="1" required autofocus>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your Email Address" name="email" type="email" tabindex="2" required>
+    </fieldset>
+    <fieldset>
+        <input type="radio" name="gender" value="male"> Male<br>
+        <input type="radio" name="gender" value="female"> Female<br>
+        </fieldset>
+    
+    <fieldset>
+      <input placeholder="Your Phone Number (optional)" name="phone" type="tel" tabindex="3" required>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your DOB" name="dob" type="date" tabindex="4" required>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your Address" name="address" type="text" tabindex="5" required>
+    </fieldset>
+    <fieldset>
+        <input placeholder="Current Balance" name="balance" type="text" tabindex="5" required>
+    </fieldset>
+
+    
+    <fieldset>
+      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+    </fieldset>
+    <!-- <p class="copyright">Designed by <a href="https://colorlib.com" target="_blank" title="Colorlib">Colorlib</a></p> -->
+  </form>
+</div>
+<!-- partial -->
+  
+</body>
+</html>

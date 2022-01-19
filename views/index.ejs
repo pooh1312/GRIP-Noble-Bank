@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>NOBEL BANK
+  </title>
+  <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Sign in & Sign Up Form | Vanilla Javascript</title>
+
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+<script>
+  const toggleForm = () => {
+  const container = document.querySelector('.container');
+  container.classList.toggle('active');
+};
+
+
+</script>
+<body>
+<!-- partial:index.partial.html -->
+<body>
+  
+  <section>
+    
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">NOBLE</a></li>
+          <li><a href="#" class="logo">
+            <img src="images/logo3.png">
+          </a></li>
+          <li><a href="#">BANK</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="slider">
+      <div class="row">
+        <div class="v-slider-frame col-sm-3 offset-sm-3">
+          <ul class="v-slides">
+            <li class="v-slide">🚩Welcome Aboard🚩</li>
+            <li class="v-slide">Expertise you need. Service you deserve!</li>
+            <li class="v-slide">MONEY + LIFE</li>
+            <li class="v-slide">Open!!</li>
+            <li class="v-slide">Deposite!!</li>
+            <li class="v-slide">Transfer!!</li>
+            <li class="v-slide">MONEY + LIFE</li>
+           
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+     
+      <div class="user signinBx">
+        <div class="imgBx"><img src="images/i1.png" alt="" /></div>
+        <div class="formBx">
+          <form action="/login" method="post">
+            <h2>💰Login to our Bank🪙 </h2>
+            <input type="text" name="name" placeholder="Username" />
+            <input type="password" name="password" placeholder="Password" />
+            <!-- <button type="submit">Log In</button> -->
+            <input type="submit" name="" value="Sign In" />
+            <p class="signup">
+              Don't have an account ?
+              <a href="#" onclick="toggleForm();">Sign Up.</a>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="user signupBx">
+        <div class="formBx">
+          <form action="/register" method="post">
+            <h2>Create an account</h2>
+            <input type="text" name="name" placeholder="Username" />
+            <input type="email" name="email" placeholder="Email Address" />
+            <input type="password" name="password" placeholder="Create Password" />
+            <input type="password" name="confirm_password" placeholder="Confirm Password" />
+            <input type="submit" name="" value="Sign Up" />
+            <p class="signup">
+              Already have an account ?
+              <a href="#" onclick="toggleForm();">Sign in.</a>
+            </p>
+          </form>
+        </div>
+        <div class="imgBx"><img src="images/i2.jpg" alt="pooh" /></div>
+      </div>
+ 
+
+      
+    </div>
+   
+    
+  </section>
+  
+</body>
+<!-- partial -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script><script  src="./slider.js"></script>
+  
+</body>
+</html>
